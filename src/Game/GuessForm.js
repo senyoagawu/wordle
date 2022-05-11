@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import wordbank from '../wordbank'
 export default function GuessForm({ setGuesses }) {
   const [guess, setGuess] = useState('')
 
@@ -10,6 +10,10 @@ export default function GuessForm({ setGuesses }) {
 
   const handleSubmit = e => {
     e.preventDefault()
+    if (!wordbank.includes(e.target.value)) {
+      window.alert('please write a valid 5 letter english word')
+      return
+    }
     setGuesses(prev => [...prev, guess])
     setGuess('')
 
