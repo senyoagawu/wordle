@@ -1,0 +1,28 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "we'll start with a simple game of wordle,k and make it increasingly more difficult",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senyoagawu/wordle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/senyoagawu/wordle/issues"
+  },
+  "homepage": "https://github.com/senyoagawu/wordle#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
